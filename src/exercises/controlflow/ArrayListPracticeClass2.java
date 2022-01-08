@@ -1,27 +1,13 @@
 package exercises.controlflow;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayListPracticeClass2 {
     public static void main(String[] args) {
-        ArrayList<Integer> test = new ArrayList<>();
+        ArrayList<Integer> test = new ArrayList<>(Arrays.asList(2, 5, 17, 147, 54, 10012, 72, 8, 91, 100, 0, 42, 13, 3));
 
-        test.add(2);
-        test.add(5);
-        test.add(17);
-        test.add(147);
-        test.add(54);
-        test.add(10012);
-        test.add(72);
-        test.add(8);
-        test.add(91);
-        test.add(100);
-        test.add(0);
-        test.add(42);
-        test.add(13);
-        test.add(3);
-
-        System.out.println(findSumEvens(test));
+        System.out.println("The sum of the even numbers in this array is: " + findSumEvens(test));
     }
 
     public static int findSumEvens(ArrayList<Integer> input) {
