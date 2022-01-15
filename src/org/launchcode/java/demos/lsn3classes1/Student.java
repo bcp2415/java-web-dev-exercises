@@ -17,12 +17,12 @@ public class Student {
         this.gpa = gpa;
     }
 
-    public String getStudent() {
+    public String getName() {
         return name;
     }
 
-    protected void setStudent(String aName) {
-        name = aName;
+    protected void setName(String aName) {
+        this.name = aName;
     }
 
     public int getStudentId() {
