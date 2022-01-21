@@ -53,6 +53,7 @@ public class Student {
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+    @Override
     public String toString() {
         return name + " (Student ID: " + studentId + ", Number of Credits: " + numberOfCredits + ", Grade: " + getGradeLevel() + ", GPA: " + gpa + ")";
     }
@@ -60,6 +61,7 @@ public class Student {
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
+    @Override
     public boolean equals(Object toBeCompared) {
         if (toBeCompared == this) {
             return true;
@@ -117,6 +119,7 @@ public class Student {
         System.out.println(sally);
         sally.addGrade(25, 3.8);
         System.out.println(sally);
+        System.out.println(sally.getGradeLevel());
 
         Student jeanne = new Student("Jeanne", 2, 1, 3.6);
         System.out.println("Is Jeanne the same as Sally?  " + jeanne.equals(sally));
