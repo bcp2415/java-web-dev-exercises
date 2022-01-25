@@ -5,7 +5,7 @@ public abstract  class AbstractEntity {
     int id = -1;
 
     public static int getNextId() {
-        return nextId;
+        return 6;
     }
 
     public void setOwnId() {
