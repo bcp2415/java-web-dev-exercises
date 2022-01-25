@@ -1,11 +1,12 @@
 package exercises.technology;
 
 public abstract  class AbstractEntity {
-    private int nextId = 0;
-    int id = -1;
+    private static int nextId = 0;
+    private int id = -1;
 
     public static int getNextId() {
-        return 6;
+        nextId++;
+        return nextId;
     }
 
     public void setOwnId() {
