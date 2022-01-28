@@ -82,7 +82,7 @@ public class Car {
          * otherwise, if miles is not greater than maxDistance,
          * then milesAbleToTravel = miles
          */
-        double milesAbleToTravel = miles > maxDistance ? maxDistance : miles;
+        double milesAbleToTravel = (miles > maxDistance) ? maxDistance : miles;
         double gallonsUsed = milesAbleToTravel / this.milesPerGallon;
         this.gasTankLevel = this.gasTankLevel - gallonsUsed;
         this.odometer += milesAbleToTravel;
