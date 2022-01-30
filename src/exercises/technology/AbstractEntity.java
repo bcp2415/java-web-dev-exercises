@@ -4,6 +4,10 @@ public abstract  class AbstractEntity {
     private static int nextId = 0;
     int id = -1;
 
+    public AbstractEntity() {
+        this.id = getNextId();
+    }
+
     public static int getNextId() {
         nextId++;
         return nextId;

@@ -9,6 +9,7 @@ public class Computer extends AbstractEntity {
     LocalDate datePurchased;
 
     public Computer(double price, int lifeExpectancy, String datePurchased) {
+        super();
         this.price = price;
         this.lifeExpectancy = lifeExpectancy;
         this.datePurchased = LocalDate.parse(datePurchased);
